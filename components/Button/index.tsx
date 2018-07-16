@@ -1,6 +1,19 @@
 import * as React from "react";
 import './index.scss'
 
-export interface ButtonProps { text: string; }
+export interface ButtonProps {
+    onClick?: React.MouseEventHandler<HTMLButtonElement>;
+    children:  any
+}
 
-export const Button = (props: ButtonProps) => <button className="gulu-button">{props.text}</button>
+export default class Button extends React.Component<ButtonProps,any>{
+    constructor(props: ButtonProps){
+        super(props)
+    }
+
+    render(){
+        return (
+            <button className="gulu-button" onClick={this.props.onClick}>{this.props.children}</button>
+        )
+    }
+}

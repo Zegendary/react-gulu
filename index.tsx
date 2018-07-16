@@ -1,7 +1,18 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { Button } from "./components/Button";
+import {Button} from "./components";
 
 
-ReactDOM.render(<Button text="按钮"/>, document.getElementById("root"));
+class Index extends React.Component{
+    click(){
+        console.log('点击按钮');
+    }
+    render(){
+        return(
+            <Button onClick={this.click}>按钮</Button>
+        )
+    }
+}
+
+ReactDOM.render(<Index/>, document.getElementById("root") as HTMLElement);
