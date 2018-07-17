@@ -4,10 +4,20 @@
     "sourceMap": true,
     "noImplicitAny": true,
     "module": "commonjs",
+    "lib": ["es6", "dom"],
     "target": "es5",
     "jsx": "react"
   },
   "include": [
-    "./components/**/*"
-  ]
+    "./src/components/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/__tests__/setupTests.ts"
+  ],
 }

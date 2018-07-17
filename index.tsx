@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import {Button} from "./components";
+import {Button} from "./src";
 
 
 class Index extends React.Component{
