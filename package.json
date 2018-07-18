@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "React UI",
   "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
   "scripts": {
     "test": "jest",
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build src/index.tsx --out-dir lib"
   },
   "repository": {
     "type": "git",
