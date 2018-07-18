@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import {Button} from "./index";
+import {Button} from "./src";
 
 
 class App extends React.Component{
