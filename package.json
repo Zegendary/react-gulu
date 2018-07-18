@@ -2,7 +2,8 @@
   "name": "react-gulu",
   "version": "0.0.1",
   "description": "React UI",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "test": "jest",
     "start": "parcel index.html"
