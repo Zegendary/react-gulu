@@ -1,10 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import {Button} from "./src";
+import {Button} from "./index";
 
 
-class Index extends React.Component{
+class App extends React.Component{
     click(){
         console.log('点击按钮');
     }
@@ -15,4 +15,4 @@ class Index extends React.Component{
     }
 }
 
-ReactDOM.render(<Index/>, document.getElementById("root") as HTMLElement);
+ReactDOM.render(<App/>, document.getElementById("root") as HTMLElement);
